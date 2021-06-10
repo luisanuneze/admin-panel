@@ -31,7 +31,7 @@
                         <li class="nav-item dropdown d-md-down-none">
                             <div class="dropdown-menu dropdown-menu-right">
                                 @foreach(config('app.languages') as $langLocale => $langName)
-                                    <a class="dropdown-item " href="{{route('language', ['locale' => $langLocale])}}">{{ strtoupper($langLocale) }}</a>
+                                    <a class="dropdown-item bg-blue-900 text-white p-2 rounded-md" href="{{route('language', ['locale' => $langLocale])}}">{{ strtoupper($langLocale) }}</a>
                                 @endforeach
                             </div>
                         </li>
